@@ -25,13 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 header('Location: index.php'); // Alihkan ke halaman utama
                 exit();
             } else {
-                $error_message = "Email atau password tidak sesuai.";
+                $error_message = "Email or password is incorrect.";
             }
         } else {
-            $error_message = "Email atau password tidak sesuai.";
+            $error_message = "Email or password is incorrect.";
         }
     } else {
-        $error_message = "Kueri database gagal.";
+        $error_message = "Database query failed.";
     }
 
     $stmt->close(); // Tutup pernyataan
@@ -54,16 +54,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main class="container">
         <div class="card">
             <img src="Images/logo-black.svg" alt="BOXCARS Logo" class="logo">
-            <h1>Login ke akun Anda</h1>
-            <p>Rasakan kemewahan otomotif, di mana keanggunan dan kekuatan berpadu.</p>
+            <h1>Login to Your Account</h1>
+            <p>Experience automotive luxury, where elegance meets power.</p>
             <div class="form">
                 <form action="" method="POST">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Masukkan email Anda" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Masukkan password Anda" required>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
                     <input type="submit" value="Login" class="btn-get-started">
-                    <p>Belum punya akun? <a href="register.php">Daftar</a></p>
+                    <p>Don't have an account? <a href="register.php">Register</a></p>
                 </form>
                 <?php if (isset($error_message)): ?>
                     <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
