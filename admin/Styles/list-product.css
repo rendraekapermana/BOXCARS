@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f5f7fa;
+}
+
+sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #e6eff5;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  margin: 20px 30px;
+}
+
+.logo img {
+  width: 150px;
+  margin-top: 2px;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.sidebar-list li {
+  margin: 20px 0;
+  position: relative;
+}
+
+.sidebar-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: 18px;
+}
+
+.sidebar-list li a img {
+  margin-right: 20px;
+  transition: filter 0.3s ease;
+}
+
+.sidebar-list li a:hover img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(89%) saturate(400%)
+    hue-rotate(195deg) brightness(100%) contrast(100%);
+}
+
+.sidebar-list li a:hover {
+  color: #323a74;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  overflow: hidden;
+}
+
+navbar {
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #e6eff5;
+  height: 80px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 34px;
+}
+
+.product-list h1 {
+  margin: 20px 30px;
+}
+
+.product-list-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1180px;
+  margin: 30px 30px;
+}
+
+.header {
+  background-color: #f1f4f9;
+  border-radius: 5px;
+  margin: 0 20px;
+  padding: 10px 10px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px 10px 20px;
+  list-style-type: none;
+}
+
+.product-list-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px 10px 20px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #b9b9b9;
+  padding: 15px 0;
+  width: 1100px;
+}
+
+.product-image img {
+  width: 130px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-name {
+  margin-left: 58px;
+  width: 200px;
+}
+
+.product-category {
+  margin-left: 25px;
+  width: 100px;
+}
+
+.product-price {
+  margin-left: 80px;
+  width: 140px;
+}
+
+.product-description {
+  margin-left: 10px;
+  width: 170px;
+}
+
+.product-action {
+  margin-left: 30px;
+  width: 50px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Susun vertikal */
+  align-items: center;
+  gap: 5px; /* Jarak antar elemen */
+}
+
+/* Border Separator */
+.separator {
+  width: 100%; /* Lebar penuh */
+  height: 1px;
+  background-color: #b9b9b9; /* Warna border */
+}
+
+.product-action img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Tambahkan ini di Styles/list-product.css */
+.message {
+  margin: 15px 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.message-success {
+  background-color: #d4edda; /* Warna latar belakang hijau muda */
+  color: #155724; /* Warna teks hijau gelap */
+  border: 1px solid #c3e6cb; /* Border hijau */
+}
+
+.message-error {
+  background-color: #f8d7da; /* Warna latar belakang merah muda */
+  color: #721c24; /* Warna teks merah gelap */
+  border: 1px solid #f5c6cb; /* Border merah */
+}

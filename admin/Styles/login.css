@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("../Images/login-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img.logo {
+  margin-bottom: 20px;
+  width: 120px;
+  height: auto;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #405FF2;
+  text-align: center; /* Menambahkan text-align center untuk judul */
+}
+
+.card p {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+  display: none; /* Menghilangkan label jika ingin menggunakan placeholder */
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  padding: 12px; /* Memperbesar padding untuk input */
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Membuat input mengisi lebar form */
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  border-color: #405FF2; /* Ubah warna border saat fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+.form input::placeholder {
+  color: #aaa; /* Warna placeholder */
+}
+
+.form input[type="submit"] {
+  padding: 12px; /* Memperbesar padding untuk tombol */
+  background-color: #405FF2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+  width: 100%; /* Membuat tombol mengisi lebar form */
+}
+
+.form input[type="submit"]:hover {
+  background-color: #354bbd; /* Warna tombol saat hover */
+}
+
+.form p {
+  color: #98A2B3;
+  margin-bottom: 0;
+}
+
+.form a {
+  text-decoration: none;
+  color: #1570EF;
+  margin-bottom: 0;
+}
